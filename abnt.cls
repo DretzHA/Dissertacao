@@ -1506,6 +1506,7 @@ Para mais informacoes, leia o manual da classe.\MessageBreak%
     \ABNTifnotempty{\ABNTdatadata}
       {{\dataformat\ABNTdatadata}}
 
+
 \end{center}
 \end{titlepage}
 }% end of \folhaderosto

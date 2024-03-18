@@ -1,14 +1,14 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\c c\~ao}}{12}{chapter.listoftables.1}%
-\contentsline {section}{\numberline {1.1}\MakeUppercase {Motiva\c c\~ao}}{12}{section.listoftables.1.1}%
-\contentsline {section}{\numberline {1.2}\MakeUppercase {Objetivos}}{12}{section.listoftables.1.2}%
+\contentsline {chapter}{\numberline {1}\MakeUppercase []{Introdu\c c\~ao}}{12}{chapter.listoftables.1}%
+\contentsline {section}{\numberline {1.1}\MakeUppercase []{Motiva\c c\~ao}}{12}{section.listoftables.1.1}%
+\contentsline {section}{\numberline {1.2}\MakeUppercase []{Objetivos}}{12}{section.listoftables.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{12}{subsection.listoftables.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{12}{subsection.listoftables.1.2.2}%
-\contentsline {chapter}{\numberline {2}\MakeUppercase {Desenvolvimento}}{14}{chapter.listoftables.2}%
-\contentsline {section}{\numberline {2.1}\MakeUppercase {Figuras}}{14}{section.listoftables.2.1}%
-\contentsline {section}{\numberline {2.2}\MakeUppercase {Tabelas}}{14}{section.listoftables.2.2}%
-\contentsline {section}{\numberline {2.3}\MakeUppercase {Equa\c c\~oes}}{15}{section.listoftables.2.3}%
-\contentsline {section}{\numberline {2.4}\MakeUppercase {Siglas e s\IeC {\'\i }mbolos}}{15}{section.listoftables.2.4}%
-\contentsline {chapter}{\numberline {3}\MakeUppercase {Conclus\~ao}}{16}{chapter.listoftables.3}%
-\contentsline {chapter}{Ap\^endice{} A{} -$\!$-{} \MakeUppercase {Nome do Ap\^endice}}{17}{chapter.appendix.A}%
-\contentsline {chapter}{Anexo{} A{} -$\!$-{} \MakeUppercase {Nome do Anexo}}{18}{chapter.annex.A}%
+\contentsline {chapter}{\numberline {2}\MakeUppercase []{Desenvolvimento}}{14}{chapter.listoftables.2}%
+\contentsline {section}{\numberline {2.1}\MakeUppercase []{Figuras}}{14}{section.listoftables.2.1}%
+\contentsline {section}{\numberline {2.2}\MakeUppercase []{Tabelas}}{14}{section.listoftables.2.2}%
+\contentsline {section}{\numberline {2.3}\MakeUppercase []{Equa\c c\~oes}}{15}{section.listoftables.2.3}%
+\contentsline {section}{\numberline {2.4}\MakeUppercase []{Siglas e s\IeC {\'\i }mbolos}}{15}{section.listoftables.2.4}%
+\contentsline {chapter}{\numberline {3}\MakeUppercase []{Conclus\~ao}}{16}{chapter.listoftables.3}%
+\contentsline {chapter}{Ap\^endice{} A{} -$\!$-{} \MakeUppercase []{Nome do Ap\^endice}}{17}{chapter.appendix.A}%
+\contentsline {chapter}{Anexo{} A{} -$\!$-{} \MakeUppercase []{Nome do Anexo}}{18}{chapter.annex.A}%
