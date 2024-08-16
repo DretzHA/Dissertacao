@@ -1,0 +1,49 @@
+\chapter{Revisão da Literatura}
+\label{chap:desenv}
+
+Os sistemas de posicionamento baseados em Bluetooth permitem o uso de diversos métodos e algoritmos, cada um com diferentes níveis de precisão, tornando-os amplamente aplicáveis a diferentes cenários, desde rastreamento humano até navegação de robôs. Dessa forma, está se tornando um foco de pesquisa cada vez mais popular para IPS~\cite{Zhuang2022}. Essa crescente popularidade impulsiona a demanda por serviços inteligentes de IoT em ambientes internos. De acordo com um relatório da ResearchAndMarket, o mercado global de IPS foi avaliado em 6,92 bilhões de dólares em 2020 e projeta-se que alcance 23,6 bilhões de dólares até 2025~\cite{Farahsari2022}.
+
+A presença quase universal de transceptores Bluetooth em dispositivos inteligentes contribui significativamente para a escalabilidade dos IPS, reduzindo custos e facilitando a implantação e manutenção. Essas características diferenciam os IPS baseados em Bluetooth de outras tecnologias de localização~\cite{Zhuang2022, Yu2021}, tornando-os uma solução atrativa para diversos setores. Atualmente, as tecnologias de localização Bluetooth têm sido amplamente utilizadas em vários campos, como saúde, varejo, logística e segurança.~\cite{Philips2023}. 
+
+Geralmente, para localização baseada em Bluetooth, assim como em outras tecnologias de localização sem fio, podem ser utilizadas diferentes algoritmos como ToF, TDoA, AoA, AoD e RSSI. Métodos baseados em ToA, TDoA e AoA são mais precisos que os métodos baseados em RSSI. No entanto, eles requerem componentes de alta precisão ou antenas especiais, tornando o sistema caro e complexo para diversas aplicações. Por outro lado, métodos baseados em RSSI possuem a vantagem de baixa complexidade, hardware mais barato e métodos simples~\cite{Assayag2023}. Ao combinar esses algoritmos com técnicas como MLT, FP e triangulação, é possível obter a posição de um alvo.
+
+As ondas de rádio são refletidas, refratadas ou dispersas frequentemente devido à obstrução por obstáculos, o que altera o caminho de propagação do sinal para o receptor, formando uma propagação NLoS e efeitos de multicaminho. A propagação NLoS e os efeitos de multicaminho resultam em perda de acurácia nos resultados de posicionamento~\cite{Yao2020}. Para mitigar esses efeitos, uma abordagem comum consiste na aplicação de técnicas de filtragem estocástica.
+
+Além da aplicação de filtros para melhorar as medidas, a fusão de sensores emerge como outra técnica poderosa. A fusão de sensores coleta informações do ambiente através de múltiplos sensores ou técnicas e, em seguida, funde seus dados para melhorar a qualidade geral da medida~\cite{Assa2015}.
+
+Nas próximas seções, as técnicas de posicionamento, filtragem estocástica e fusão sensorial serão abordadas com maior detalhamento.
+
+\section{Algoritmos para posicionamento}
+\label{sec:algoritmos}
+
+\subsection{Geolocalização}
+\label{subsec:geolocalizacao}
+
+\subsection{Localização por tempo}
+\label{subsec:angulos}
+
+\subsection{Localização por ângulos}
+\label{subsec:angulos}
+
+\subsubsection{Equações de ângulos}
+
+\subsection{Localização por intesidade de sinal}
+\label{subsec:radiofrequencia}
+
+\subsubsection{Equações de RSSI}
+
+\subsubsection{Equações Hibrido AoA+RSSI}
+
+
+\section{Filtragem Estocástica}
+\label{sec:filtragem}
+
+\subsection{Filtro de Kalman}
+\label{subsec:kf}
+
+\subsection{Filtro de Kalman \textit{Unscented}}
+\label{subsec:ukf}
+
+\section{Fusão de Sensores}
+\label{sec:fusao}
+

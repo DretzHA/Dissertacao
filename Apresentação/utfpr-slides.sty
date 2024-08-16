@@ -1,0 +1,560 @@
+%%%% utfpr-slides.sty, 2019/12/01, 1.2
+%%%% Copyright (C) 2015-2019 Luiz E. M. Lima (luizeduardomlima@gmail.com)
+%%
+%% This work may be distributed and/or modified under the conditions of the
+%% LaTeX Project Public License, either version 1.3 of this license or (at your
+%% option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX version
+%% 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainer of this work is Luiz E. M. Lima.
+%%
+%% This work consists of the files utfpr-slides.sty and utfpr-slides.tex.
+%%
+%% A brief description of this work is in readme.txt.
+
+%% Identificação e modificações
+\NeedsTeXFormat{LaTeX2e}[2005/12/01]
+\ProvidesPackage{utfpr-slides}[2019/12/01 v1.2 utfpr-slides package]
+%%%% Alteração de alguns pacotes, comandos, formatações e tipografias.
+%%%% Alteração de nomes dos arquivos (utfprpgtex-slides --> utfpr-slides).
+%%%% Inserção de opção para uso do estilo numérico da ABNT.
+% \ProvidesPackage{utfprpgtex-slides}[2019/02/21 v1.1 utfprpgtex-slides package]
+%%%% Alteração de alguns pacotes, comandos, formatações e tipografias.
+%%%% Alteração de bibtex para biber (biblatex) na produção de citações e referências.
+% \ProvidesPackage{utfprpgtex-slides}[2015/09/20 v1.0 utfprpgtex-slides package]
+%%%% Criação dos arquivos constituintes.
+
+%% Opções do pacote
+\newif\if@rmfonttimes%
+\DeclareOption{Times=true}{\@rmfonttimestrue}
+\DeclareOption{Times=false}{\@rmfonttimesfalse}
+\DeclareOption{Times}{\ExecuteOptions{Times = true}}
+\newif\if@biburlslinks%
+\DeclareOption{BibURLs=true}{\@biburlslinkstrue}
+\DeclareOption{BibURLs=false}{\@biburlslinksfalse}
+\DeclareOption{BibURLs}{\ExecuteOptions{BibURLs = true}}
+\newif\if@addgovlogo%
+\DeclareOption{GovLogo=true}{\@addgovlogotrue}
+\DeclareOption{GovLogo=false}{\@addgovlogofalse}
+\DeclareOption{GovLogo}{\ExecuteOptions{GovLogo = true}}
+\newif\if@addmeclogo%
+\DeclareOption{MECLogo=true}{\@addmeclogotrue}
+\DeclareOption{MECLogo=false}{\@addmeclogofalse}
+\DeclareOption{MECLogo}{\ExecuteOptions{MECLogo = true}}
+\newif\if@showlogosonslides%
+\DeclareOption{LogosOn=true}{\@showlogosonslidestrue}
+\DeclareOption{LogosOn=false}{\@showlogosonslidesfalse}
+\DeclareOption{LogosOn}{\ExecuteOptions{LogosOn = true}}
+\newif\if@useabntnum%
+\newif\if@useabntnumbrkt%
+\DeclareOption{ABNTNum=none}{%
+  \@useabntnumfalse%
+  \@useabntnumbrktfalse%
+}
+\DeclareOption{ABNTNum=dflt}{%
+  \@useabntnumtrue%
+  \@useabntnumbrktfalse%
+}
+\DeclareOption{ABNTNum=brkt}{%
+  \@useabntnumtrue%
+  \@useabntnumbrkttrue%
+}
+\DeclareOption*{\PackageWarning{utfpr-slides}{Unknown option `\CurrentOption'}}
+\ExecuteOptions{%
+  Times   = false,%
+  BibURLs = false,%
+  GovLogo = false,%
+  MECLogo = false,%
+  LogosOn = false,%
+  ABNTNum = none,%
+}
+\ProcessOptions\relax%
+
+%% Pacotes utilizados
+\@ifclassloaded{article}{%
+  \RequirePackage{beamerarticle}%
+}{}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{babel}
+\RequirePackage{lmodern}
+\if@rmfonttimes%
+  \RequirePackage{newtxtext}
+  \RequirePackage{newtxmath}
+\fi%
+\RequirePackage{textcomp}
+\RequirePackage{fontawesome}
+\RequirePackage{microtype}
+\RequirePackage{hanging}
+\RequirePackage{amsmath}
+\RequirePackage{icomma}
+\RequirePackage{booktabs}
+\RequirePackage[overload]{textcase}
+\RequirePackage{csquotes}
+\RequirePackage{xpatch}
+\if@useabntnum%
+  \RequirePackage[%
+    style      = abnt-numeric,%
+    \if@useabntnumbrkt%
+      citestyle = abnt-num-brkt,%
+    \fi%
+    natbib     = true,%
+    sorting    = none,%
+    uniquename = init,%
+    giveninits = true,%
+    comp       = true,%
+  ]{biblatex}
+\else%
+  \RequirePackage[%
+    style      = abnt,%
+    natbib     = true,%
+    uniquename = init,%
+    giveninits = true,%
+  ]{biblatex}
+\fi%
+\@ifclassloaded{article}{%
+  % \RequirePackage[showframe]{geometry}
+  \RequirePackage{geometry}
+  \RequirePackage{afterpage}
+  \RequirePackage{indentfirst}%
+  \RequirePackage{xspace}%
+  \RequirePackage{fancyhdr}%
+  \RequirePackage{tcolorbox}%
+  \RequirePackage{graphicx}%
+  \RequirePackage{caption}%
+  \RequirePackage{hyperref}%
+}{}
+
+%% Cores
+\definecolor{ADarkBlue}{RGB}{0, 0, 85}
+\definecolor{UTFPRBlack}{RGB}{55, 52, 53}
+\definecolor{UTFPRYellow}{RGB}{254, 203, 41}
+\definecolor{GovGray}{RGB}{88, 89, 91}
+
+%% Hiperlinks e urls
+\hypersetup{%
+  breaklinks         = true,%
+  colorlinks         = true,%
+  allcolors          = ADarkBlue,%
+  bookmarksopen      = true,%
+  bookmarksnumbered  = true,%
+  pdfdisplaydoctitle = true,%
+  pdfpagelayout      = SinglePage,%
+}
+\DeclareUrlCommand\URL{%
+  \renewcommand*{\UrlFont}{\ttfamily\color{ADarkBlue}}%
+  \renewcommand*{\UrlLeft}{<}%
+  \renewcommand*{\UrlRight}{>}%
+}
+\g@addto@macro\UrlBreaks{\UrlOrds}
+
+%% Variáveis dependentes do idioma
+\iflanguage{english}{%
+  \newcommand*{\titlepagename}{Title Page}%
+  \newcommand*{\govlogofile}{government}%
+  \newcommand*{\mecname}{Ministry of Education}%
+  \newcommand*{\meclogoname}{%
+    MINISTRY OF\\%
+    \textbf{EDUCATION}%
+  }%
+  \newcommand*{\utfprname}{Federal University of Technology -- Paraná (UTFPR)}%
+  \newcommand*{\sourcename}{Source}%
+  \addto\captionsenglish{\renewcommand*{\contentsname}{Summary}}%
+}{%
+  \newcommand*{\titlepagename}{Página de Título}%
+  \newcommand*{\govlogofile}{governo}%
+  \newcommand*{\mecname}{Ministério da Educação}%
+  \newcommand*{\meclogoname}{%
+    MINISTÉRIO DA\\%
+    \textbf{EDUCAÇÃO}%
+  }%
+  \newcommand*{\utfprname}{Universidade Tecnológica Federal do Paraná (UTFPR)}%
+  \newcommand*{\sourcename}{Fonte}%
+  \AtBeginDocument{\frenchspacing}%
+}
+
+%% Definições de comandos
+\newcommand*{\arg@ifnotempty}[3][]{%
+  \ifx&#2&%
+    #1%
+  \else%
+    #3%
+  \fi%
+}
+\newcommand*{\cmd@ifnotempty}[3][]{%
+  \ifx#2\@empty%
+    #1%
+  \else%
+    #3%
+  \fi%
+}
+\newcommand*{\@logoevent}{}
+\newcommand*{\logoevent}[1]{\arg@ifnotempty{#1}{\renewcommand*{\@logoevent}{\includegraphics[height = 8mm]{./Logos/#1}}}}
+\newcommand*{\@logoorg}{}
+\newcommand*{\logoorg}[1]{\arg@ifnotempty{#1}{\renewcommand*{\@logoorg}{\includegraphics[height = 8mm]{./Logos/#1}}}}
+\newcommand*{\@logoextinst}{}
+\newcommand*{\logoextinst}[1]{\arg@ifnotempty{#1}{\renewcommand*{\@logoextinst}{\includegraphics[height = 8mm]{./Logos/#1}}}}
+\newcommand*{\@logoprog}{}
+\newcommand*{\logoprog}[1]{\arg@ifnotempty{#1}{\renewcommand*{\@logoprog}{\includegraphics[height = 8mm]{./Logos/#1}}}}
+\newcommand*{\@logodept}{}
+\newcommand*{\logodept}[1]{\arg@ifnotempty{#1}{\renewcommand*{\@logodept}{\includegraphics[height = 8mm]{./Logos/#1}}}}
+\newcommand*{\@logoextra}{}
+\newcommand*{\logoextra}[1]{\arg@ifnotempty{#1}{\renewcommand*{\@logoextra}{\includegraphics[height = 8mm]{./Logos/#1}}}}
+\newcommand*{\@logocampus}{}
+\newcommand*{\logocampus}[1]{\arg@ifnotempty{#1}{\renewcommand*{\@logocampus}{\includegraphics[height = 8mm]{./Logos/#1}}}}
+\if@addmeclogo%
+  \newcommand*{\@logomec}{%
+    \begin{minipage}[b][8mm][b]{14mm}%
+    \begin{flushright}%
+    \tiny\sffamily\textcolor{GovGray}{\meclogoname}%
+    \end{flushright}%
+    \end{minipage}%
+  }
+\else%
+  \newcommand*{\@logomec}{}
+\fi%
+\if@addgovlogo%
+  \newcommand*{\@logogov}{\includegraphics[height = 8mm]{./Logos/\govlogofile}}
+\else%
+  \newcommand*{\@logogov}{}
+\fi%
+\newcommand*{\eventlogos}[1][\z@]{%
+  \vskip#1%
+  \cmd@ifnotempty{\@logoevent}{\@logoevent\hskip10pt}%
+  \@logoorg\hfill\@logoextinst%
+  \cmd@ifnotempty{\@logoextra}{\hskip10pt\@logoextra}%
+  \cmd@ifnotempty{\@logocampus}{\hskip10pt\@logocampus}%
+  \cmd@ifnotempty{\@logomec}{\hskip10pt\@logomec}%
+  \cmd@ifnotempty{\@logogov}{\hskip10pt\@logogov}%
+}
+\newcommand*{\institutelogos}[1][\z@]{%
+  \vskip#1%
+  \cmd@ifnotempty{\@logoprog}{\@logoprog\hskip10pt}%
+  \@logodept\hfill\@logoextra%
+  \cmd@ifnotempty{\@logocampus}{\hskip10pt\@logocampus}%
+  \cmd@ifnotempty{\@logomec}{\hskip10pt\@logomec}%
+  \cmd@ifnotempty{\@logogov}{\hskip10pt\@logogov}%
+}
+\if@showlogosonslides%
+  \newcommand*{\ftlogos}{%
+    \setlength{\unitlength}{1mm}%
+    \begin{picture}(0,0)%
+    \put(91,6){%
+      \makebox(0,0)[tl]{%
+        \@logocampus%
+        \cmd@ifnotempty{\@logomec}{\hskip10pt\@logomec}%
+        \cmd@ifnotempty{\@logogov}{\hskip10pt\@logogov}%
+      }%
+    }%
+    \end{picture}%
+  }
+\else%
+  \newcommand*{\ftlogos}{}
+\fi%
+\newcommand*{\campusacr}{}
+\newcommand*{\campusname}{}
+\newcommand*{\campus}[2]{%
+  \renewcommand*{\campusacr}{#1}%
+  \renewcommand*{\campusname}{#2}%
+}
+\newcommand*{\deptlogo}{}
+\newcommand*{\deptacr}{}
+\newcommand*{\deptname}{}
+\newcommand*{\departament}[3][]{%
+  \renewcommand*{\deptlogo}{#1}%
+  \renewcommand*{\deptacr}{#2}%
+  \renewcommand*{\deptname}{#3}%
+}
+\newcommand*{\respnoticetitle}{}
+\newcommand*{\respnoticetext}{}
+\newcommand*{\respnotice}[2][]{%
+  \renewcommand*{\respnoticetitle}{#1}
+  \renewcommand*{\respnoticetext}{#2}
+}
+\newbox{\orcidiconbox}
+\sbox{\orcidiconbox}{\includegraphics[height = 1.5ex]{./Logos/orcid-id}}
+\newcommand*{\orcid}[1]{\href{https://orcid.org/#1}{\usebox{\orcidiconbox}~https://orcid.org/#1}}
+\newcommand*{\orcidlinkicon}[1]{\href{https://orcid.org/#1}{~\usebox{\orcidiconbox}}}
+\newcommand*{\email}[2][]{\textsuperscript{#1}\href{mailto:#2}{\faEnvelopeO~#2}}
+\newcommand*{\emaillinkicon}[2][]{\textsuperscript{#1}\href{mailto:#2}{~\faEnvelopeO}}
+\newcommand*{\affil}[2][]{\textsuperscript{#1}\faInstitution~#2}
+\newcommand*{\linkicon}{{\footnotesize\faExternalLink}}
+\newcommand*{\linktofile}[2]{\href{run:#1}{\beamergotobutton{#2}}}
+\newcommand*{\source}[1]{\par\scriptsize\sourcename:\space#1}
+\newcommand*{\sep}{\unskip,\quad}
+\newcounter{sfootnote}
+\newcommand*{\sfootnote}[2][]{%
+  \begingroup%
+  \addtocounter{sfootnote}{1}%
+  \renewcommand*{\thefootnote}{\fnsymbol{sfootnote}}%
+  {\footnote[#1]{#2}}%
+  \addtocounter{footnote}{-1}%
+  \endgroup%
+}
+\def\@gobbleoptandtwo[#1]#2#3{}
+\pdfstringdefDisableCommands{%
+  \renewcommand*{\athanks}{\@gobbleoptandtwo}%
+  \renewcommand*{\sep}{,\xspace}%
+  \renewcommand*{\\}{}%
+}
+
+%% Customizações da classe beamer
+\mode<presentation>{%
+  \usetheme{Boadilla}%
+  \usefonttheme[onlymath]{serif}%
+  \usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{./Logos/utfpr-fundo-ct-2023}}%
+  \setbeamercolor*{title page}{fg = black}%
+  \setbeamercolor*{title}{fg = black}%
+  \setbeamercolor*{bibliography entry author}{fg = black}%
+  \setbeamercolor*{bibliography entry title}{fg = black}%
+  \setbeamercolor*{bibliography entry location}{fg = black}%
+  \setbeamercolor*{bibliography entry note}{fg = black}%
+  \setbeamercolor*{bibliography item}{fg = black}%
+  \setbeamercolor*{author in head/foot}{fg = UTFPRBlack, bg = UTFPRYellow}%
+  \setbeamercolor*{frametitle}{fg = black}%
+  \setbeamercolor*{button}{fg = ADarkBlue, bg = UTFPRYellow}%
+  \setbeamercolor*{item projected}{fg = UTFPRBlack, bg = UTFPRYellow}%
+  \setbeamercolor*{subitem projected}{fg = UTFPRBlack, bg = UTFPRYellow}%
+  \setbeamercolor*{subsubitem projected}{fg = UTFPRBlack, bg = UTFPRYellow}%
+  \setbeamercolor*{structure}{fg = UTFPRYellow}%
+  \setbeamercolor*{block title}{fg = UTFPRBlack, bg = UTFPRYellow}%
+  \setbeamercolor*{caption name}{fg = black}%
+  \setbeamerfont{title}{series = \bfseries}%
+  \setbeamerfont{date}{size = \scriptsize}%
+  \setbeamerfont{caption}{size = \scriptsize}%
+  \setbeamerfont{caption name}{size = \scriptsize}%
+  \setbeamertemplate{title page}{%
+    \pdfbookmark[2]{\titlepagename}{titlepage}%
+    \parbox{\textwidth}{}%
+    \vskip1.75\baselineskip%
+    \begingroup%
+    \centering%
+    \begin{beamercolorbox}[sep = 6pt, center]{title}%
+    \usebeamerfont{title}\inserttitle\par%
+    \ifx\insertsubtitle\@empty%
+    \else%
+      \vskip0.25em%
+      {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+    \fi%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[sep = 6pt, center]{author}%
+    \usebeamerfont{author}\insertauthor%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[sep = 6pt, center]{institute}%
+    \usebeamerfont{institute}\insertinstitute%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[sep = 6pt, center]{date}%
+    \usebeamerfont{date}\insertdate%
+    \end{beamercolorbox}%
+    \vspace*{\stretch{1000}}%
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}%
+    \endgroup%
+  }%
+  \if@useabntnum%
+    \setbeamertemplate{bibliography item}{\insertbiblabel}%
+  \else%
+    \setbeamertemplate{bibliography item}{\scalebox{0.5}{\pgfuseimage{beamericonarticle}}}%
+  \fi%
+  \setbeamertemplate{frametitle}{%
+    \insertframetitle%
+    \par\small\insertframesubtitle%
+  }%
+  \setbeamertemplate{frametitle continuation}[from second][]%
+  \setbeamertemplate{caption}[numbered]%
+  \setbeamertemplate{caption label separator}[endash]%
+  \setbeamertemplate{footnote}{\hangpara{1em}{1}\makebox[1em][l]{\insertfootnotemark}\scriptsize\insertfootnotetext\vspace{0.3cm}\par}%
+  \CheckCommand*{\beamer@checkframetitle}{\@ifnextchar\bgroup\beamer@inlineframetitle{}}%
+  \renewcommand*{\beamer@checkframetitle}{%
+    \global\let\beamer@frametitle\relax%
+    \@ifnextchar\bgroup\beamer@inlineframetitle{}%
+  }%
+  \addtobeamertemplate{frametitle}{%
+    \hypersetup{linkcolor = black}%
+    \ifx\insertframetitle\empty%
+      \frametitle{\insertsectionhead}%
+    \fi%
+    \ifx\insertframesubtitle\empty%
+      \framesubtitle{\insertsubsectionhead}%
+    \fi%
+    \ifnum\insertframenumber>1%
+      \ftlogos%
+    \fi%
+  }{}%
+  \newcommand*{\athanks}[3][]{\arg@ifnotempty{#1}{\orcidlinkicon{#1}}}%
+  \renewcommand*{\beamer@andtitle}{\sep}%
+  \renewcommand*{\beamer@andinst}{\\}%
+  \preto{\tableofcontents}{\pdfbookmark[2]{\contentsname}{toc}}%
+  \let\oldbeamer@framefootnotetext\beamer@framefootnotetext%
+  \renewcommand*{\beamer@framefootnotetext}[1]{\oldbeamer@framefootnotetext{#1\@addpunct{.}}}%
+  \renewcommand*{\bibfont}{\scriptsize}%
+  \setlength{\biblabelsep}{0.5\labelsep}%
+  \setlength{\bibitemsep}{0.5\itemsep}%
+  \if@useabntnum%
+  \else%
+    \defbibenvironment{bibliography}{%
+      \list{\printfield[labelalphawidth]{labelalpha}}{%
+        % \setlength{\labelwidth}{\labelalphawidth}%
+        \setlength{\leftmargin}{\labelwidth}%
+        \setlength{\labelsep}{\biblabelsep}%
+        \addtolength{\leftmargin}{\labelsep}%
+        \setlength{\itemsep}{\bibitemsep}%
+        \setlength{\parsep}{\bibparsep}%
+      }%
+      \renewcommand*{\makelabel}[1]{\hss##1}%
+    }{\endlist}{\item}%
+  \fi%
+}
+
+%% Customizações da classe artigo
+\mode<article>{%
+  \newgeometry{%
+    top         = 20mm,%
+    left        = 20mm,%
+    right       = 20mm,%
+    bottom      = 20mm,%
+    head        = 15mm,%
+    headsep     = 0mm,%
+    footskip    = 5mm,%
+    includehead = true,%
+  }%
+  \savegeometry{title}
+  \newgeometry{%
+    top      = 20mm,%
+    left     = 20mm,%
+    right    = 20mm,%
+    bottom   = 20mm,%
+    head     = 5mm,%
+    headsep  = 5mm,%
+    footskip = 5mm,%
+  }%
+  \savegeometry{standard}%
+  \loadgeometry{title}%
+  \setlength{\parskip}{\z@}%
+  \setlength{\parindent}{6mm}%
+  \pagestyle{fancy}%
+  \fancyhf{}%
+  \fancyhead[L]{%
+    \footnotesize\sffamily UTFPR\cmd@ifnotempty{\campusacr}{{-}\campusacr}\cmd@ifnotempty{\deptacr}{{/}\deptacr}%
+  }%
+  \fancyhead[C]{}%
+  \fancyhead[R]{%
+    \footnotesize\sffamily\thepage%
+  }%
+  \renewcommand*{\headrule}{}%
+  \fancypagestyle{title}{%
+    \fancyhf{}%
+    \fancyhead[L]{%
+      \begin{minipage}[b][][c]{35mm}%
+      \begin{flushleft}%
+      \includegraphics[width = 30mm]{./Logos/utfpr}%
+      \end{flushleft}%
+      \end{minipage}%
+    }%
+    \fancyhead[C]{%
+      \cmd@ifnotempty[{\color{UTFPRBlack}\vrule width 0.5pt height 3\baselineskip}\hskip6pt]{\deptlogo}{}%
+      \begin{minipage}[b][][c]{100mm}%
+      \cmd@ifnotempty{\deptlogo}{\centering}%
+      {\footnotesize\sffamily\mecname}\vskip-3pt%
+      {\footnotesize\sffamily\bfseries\utfprname}\vskip-3pt%
+      {\footnotesize\sffamily\campusname}\vskip-3pt%
+      {\footnotesize\sffamily\deptname}%
+      \end{minipage}%
+    }%
+    \fancyhead[R]{%
+      \cmd@ifnotempty{\deptlogo}{%
+        \begin{minipage}[b][][c]{35mm}%
+        \begin{flushright}%
+        \includegraphics[width = 30mm]{./Logos/\deptlogo}%
+        \end{flushright}%
+        \end{minipage}%
+      }%
+    }%
+    \renewcommand*{\headrule}{%
+      \vskip-\p@%
+      {\color{UTFPRBlack}\hrule height 0.5pt}\vskip\p@%
+      {\color{UTFPRYellow}\hrule height 0.5pt}\vskip\p@%
+    }%
+  }%
+  \g@addto@macro\maketitle{%
+    \thispagestyle{title}%
+    \afterpage{%
+      \globaldefs=1%
+      \loadgeometry{standard}%
+    }%
+  }%
+  \patchcmd{\@maketitle}{\LARGE\@title}{\Large\@title}{}{}%
+  \patchcmd{\@maketitle}{\large}{\small}{}{}%
+  \renewcommand*{\subtitle}[2][]{%
+    \newcommand*{\insertsubtitle}{#2}%
+    \g@addto@macro\@title{\texorpdfstring{\\}{\space-\space}\normalsize#2}%
+  }%
+  \newcommand*{\athanks}[3][]{%
+    \begingroup%
+    \let\rlap\relax%
+    \thanks{%
+      \arg@ifnotempty{#3}{\affil{#3}}%
+      \arg@ifnotempty{#2}{;\space\email{#2}}%
+      \arg@ifnotempty{#1}{;\space\orcid{#1}}%
+    }%
+    \endgroup%
+  }%
+  \renewcommand*{\and}{\sep}%
+  \renewcommand*{\inst}[1]{}%
+  \AtBeginDocument{\hypersetup{pdftitle = {\@title}, pdfauthor = {\@author}}}%
+  \pdfstringdefDisableCommands{\renewcommand*{\\}{ }}%
+  \renewcommand*{\section}{\@startsection{section}{1}{\z@}{-\baselineskip}{\baselineskip}{\bfseries\MakeUppercase}}%
+  \renewcommand*{\subsection}{\@startsection{subsection}{2}{\z@}{-\baselineskip}{\baselineskip}{\bfseries}}%
+  \renewcommand*{\source}[1]{\par\small\sourcename:\space#1}%
+  \tcbuselibrary{skins, breakable}%
+  \setbeamertemplate{block begin}{%
+    \begin{tcolorbox}[%
+      beamer,%
+      breakable,%
+      noparskip,%
+      title = \insertblocktitle,%
+    ]%
+  }%
+  \setbeamertemplate{block end}{%
+    \end{tcolorbox}%
+  }%
+  \let\oldfootnotetext\footnotetext%
+  \renewcommand*{\footnotetext}[2][]{\oldfootnotetext[#1]{#2\@addpunct{.}}}%
+  \captionsetup{%
+    font          = small,%
+    labelsep      = endash,%
+    justification = centerlast,%
+    % skip          = 12pt,%
+  }
+  \defbibheading{bibliography}[\refname]{%
+    \section{#1}%
+    \markboth{#1}{#1}%
+  }%
+}
+
+%% Legendas
+\setlength{\abovecaptionskip}{\z@}
+\setlength{\belowcaptionskip}{\z@}
+
+%% Citações e referências
+\DeclareLanguageMapping{brazilian}{brazilian-abnt}
+\@ifpackagelater{biblatex-abnt}{2017/07/28}{%
+  \DeclareLanguageMapping{english}{abnt-english}%
+}{%
+  \DeclareLanguageMapping{english}{english-abnt}%
+  \NewBibliographyString{sheettotal, sheettotals}%
+  \DefineBibliographyStrings{english}{sheettotal = {s\adddot}, sheettotals = {s\adddot}}%
+}
+\DeclareLanguageMappingSuffix{}
+\if@biburlslinks%
+\else%
+  \DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon\space\href{#1}{\faExternalLink}}
+\fi%
+\@ifpackagelater{biblatex}{2017/12/19}{}{%
+  \RequirePackage{silence}%
+  \WarningFilter{biblatex}{Patching footnotes failed}%
+}

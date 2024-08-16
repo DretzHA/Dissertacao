@@ -1,0 +1,223 @@
+%% Exemplo de utilizacao do estilo de formatacao normas-utf-tex (http://normas-utf-tex.sourceforge.net)
+%% Autores: (200?-2011) Hugo Vieira Neto (hvieir@utfpr.edu.br)
+%%          (200?-2011) Diogo Rosa Kuiaski (diogo.kuiaski@gmail.com)
+%%          (2011-2012) Marcos Talau <talau@users.sourceforge.net>
+%% Colaborador:
+%%          (2011) César M. Vargas Benitez <cesarvargasb@gmail.com>
+%%          (2015) Glauber Gomes de Oliveira Brante <gbrante@utfpr.edu.br>
+
+\documentclass[openright]{Normas/normas-utf-tex} %openright = o capitulo comeca sempre em paginas impares
+%\documentclass[oneside]{normas-utf-tex} %oneside = para documentos com numero de paginas menor que 100 (apenas frente da folha)
+
+% force A4 paper format
+\special{papersize=210mm,297mm}
+\usepackage[hidelinks,plainpages=true, bookmarks=true, breaklinks, pdfstartview=FitH,pdftitle={Nome da Teste},pdfauthor={Nome do autor},pdfsubject={Assunto do documento},pdfkeywords={Palavras-chave}]{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+\urlstyle{same}
+%configuracao correta das referencias bibliograficas.
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm,abnt-etal-cite=2,abnt-etal-list=0,abnt-thesis-year=both]{Normas/abntcite}
+\usepackage[brazil]{babel} % pacote portugues brasileiro
+\usepackage[utf8]{inputenc} % pacote para acentuacao direta
+
+\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+\usepackage{graphicx} % pacote grafico
+%\usepackage{times} % fonte times (substituida pelos dois comandos abaixo - padrao LATEX)
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[final]{pdfpages} % adicao da ata
+\usepackage{float}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+
+% ---------- Preambulo ----------
+\instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituicao
+\programa{Programa de Pós-Graduação em Sistemas de Energia} % nome do programa
+\area{Automação e Sistemas de Energia} % area de concentracao
+
+\documento{Dissertação} % [Dissertacao] ou [Tese]
+\documentoingles{Thesis}
+\nivel{Mestrado} % [Mestrado] ou [Doutorado]
+\curso{Sistemas de Energia}
+\titulacao{Mestre} % [Mestre] ou [Doutor]
+\autorizacao{(\cmark) Não autorizo a disponibilização de endereço de correio eletrônico para contato.\\
+(\xmark) Autorizo a disponibilização do correio eletrônico para contato.} % Autorização de Divulgação de e-mail para contato. Utilize \cmark na linha que preferir e \xmark na linha que não refletir seu desejo
+%opções de licença Creative Commons. Marque com X somente a que escolher
+\licencaCCBY{} %https://creativecommons.org/licenses/by/4.0/deed.pt
+\licencaCCBYNC{X} %https://creativecommons.org/licenses/by-nc/4.0/deed.pt
+\licencaCCBYNCND{} %https://creativecommons.org/licenses/by-nc-nd/4.0/deed.pt
+\licencaCCBYNCSA{} %https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt
+\licencaCCBYND{} %https://creativecommons.org/licenses/by-nd/4.0/deed.pt
+\licencaCCBYSA{} %https://creativecommons.org/licenses/by-sa/4.0/deed.pt
+
+\titulo{Estimativa de localização de alvos em ambientes internos por meio de fusão de algoritmos de Multilateração e Ângulo de Chegada. } % titulo do trabalho em portugues
+\title{Indoor target location estimation via Multilateration and Angle of Arrival fusion algorithms.} % titulo do trabalho em ingles
+
+\autor{Andrey Fabris} % autor do trabalho
+\cita{FABRIS, Andrey} % sobrenome (maiusculas), nome do autor do trabalho
+
+\palavraschave{Ângulo de Chegada, Bluetooth, Filtros Estocásticos, Multilateração, RSSI. } % palavras-chave do trabalho
+\keywords{Angle of Arrival, Bluetooth, Multilateration, RSSI, Stochastic Filters.} % palavras-chave do trabalho em ingles
+
+\comentario{\UTFPRdocumentodata\ apresentada como requisito parcial para obtenção do título de ``\UTFPRtitulacaodata\ em Engenharia Elétrica'' do \UTFPRprogramadata\ da \ABNTinstituicaodata.}
+
+\orientador{Ohara Kerusauskas Rayel} % nome do orientador do trabalho
+%\orientador[Orientadora:]{Nome da Orientadora} % <- no caso de orientadora, usar esta sintaxe
+\coorientador{João Luiz Rebelatto} % nome do coorientador do trabalho, caso exista
+%\coorientador[Coorientadora:]{Nome da Coorientadora} % <- no caso de co-orientadora, usar esta sintaxe
+
+\local{Curitiba} % cidade
+\data{2024} % ano
+
+
+% desativa hifenizacao mantendo o texto justificado.
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\sloppy
+
+%---------- Inicio do Documento ----------
+\begin{document}
+\pdfstringdefDisableCommands{%
+	\let\MakeUppercase\relax
+}
+\capa % geracao automatica da capa
+\folhaderosto % geracao automatica da folha de rosto
+
+
+% insercao da ATA
+%\includepdf{ata.pdf}
+
+% dedicatoria
+%\include{Pre-Textuais/dedicatoria}
+
+% agradecimentos (opcional)
+%\include{Pre-Textuais/agradecimentos}
+
+% epigrafe (opcional)
+%\include{Pre-Textuais/epigrafe}
+
+%resumo
+\include{Pre-Textuais/resumo_pt}
+%abstract
+\include{Pre-Textuais/resumo_en}
+
+% listas (opcionais, mas recomenda-se a partir de 5 elementos)
+\listadefiguras % geracao automatica da lista de figuras
+\listadetabelas % geracao automatica da lista de tabelas
+%\listadequadros % adivinhe :)
+\listadesiglas % geracao automatica da lista de siglas
+\listadesimbolos % geracao automatica da lista de simbolos
+
+% sumario
+\sumario % geracao automatica do sumario
+
+% Pacotes necessários quando não se usa sumário
+%\renewcommand{\chaptertitlepagestyle}{plainheader}
+%\pagenumbering{arabic}
+
+
+
+%---------- Inicio do Texto ----------
+% recomenda-se a escrita de cada capitulo em um arquivo texto separado (exemplo: intro.tex, fund.tex, exper.tex, concl.tex, etc.) e a posterior inclusao dos mesmos no mestre do documento utilizando o comando \input{}, da seguinte forma:
+%\input{intro.tex}
+%\input{fund.tex}
+%\input{exper.tex}
+%\input{concl.tex}
+
+\newcommand\extraPages{1}
+\newcounter{savepage}
+\setcounter{savepage}{\value{page}+\extraPages}
+\setcounter{page}{\value{savepage}}
+
+
+%---------- Introdução ----------
+\include{Pos-Textuais/Introducao}
+
+%---------- Revisão Bibliográfica ----------
+\include{Pos-Textuais/Desenvolvimento}
+
+%---------- Modelo do Sistema ----------
+\include{Pos-Textuais/ModeloSistema}
+
+%---------- Resultados ----------
+\include{Pos-Textuais/Resultados}
+
+%---------- Conclusão ----------
+\include{Pos-Textuais/Conclusao}
+
+%---------- Referencias ----------
+\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
+\label{bibstart}
+\bibliography{reflatex} % geracao automatica das referencias a partir do arquivo reflatex.bib
+\bibliographystyle{abntex2-alf}
+\label{bibend}
+
+
+%---------- Apendices (opcionais) ----------
+%\apendice
+%\chapter{Nome do Apêndice}
+%\label{chap:apendice}
+
+%Use o comando {\ttfamily \textbackslash apendice} e depois comandos {\ttfamily \textbackslash chapter\{\}}
+%para gerar títulos de apêndices.
+
+
+% ---------- Anexos (opcionais) ----------
+%\anexo
+%\chapter{Nome do Anexo}
+%\label{chap:anexo}
+
+%Use o comando {\ttfamily \textbackslash anexo} e depois comandos {\ttfamily \textbackslash chapter\{\}}
+%para gerar títulos de anexos.
+
+
+% --------- Ordenacao Afabetica da Lista de siglas --------
+%\textbf{* Observa\c{c}\~oes:} a ordenacao alfabetica da lista de siglas ainda nao eh realizada de forma automatica, porem
+% eh possivel se de realizar isto manualmente. Duas formas:
+%
+% ** Primeira forma)
+%    A ordenacao eh feita com o auxilio do comando 'sort', disponivel em qualquer
+% sistema Linux e UNIX, e tambem em sistemas Windows se instalado o coreutils (http://gnuwin32.sourceforge.net/packages/coreutils.htm)
+% comandos para compilar e ordenar, supondo que seu arquivo se chame 'dissertacao.tex':
+%
+%      $ latex dissertacao
+%      $ bibtex dissertacao && latex dissertacao
+%      $ latex dissertacao
+%      $ sort dissertacao.lsg > dissertacao.lsg.tmp
+%      $ mv dissertacao.lsg.tmp dissertacao.lsg
+%      $ latex dissertacao
+%      $ dvipdf dissertacao.dvi
+%
+%
+% ** Segunda forma)
+%\textbf{Sugest\~ao:} crie outro arquivo .tex para siglas e utilize o comando \sigla{sigla}{descri\c{c}\~ao}.
+%Para incluir este arquivo no final do arquivo, utilize o comando \input{arquivo.tex}.
+%Assim, Todas as siglas serao geradas na ultima pagina. Entao, devera excluir a ultima pagina da versao final do arquivo
+% PDF do seu documento.
+
+
+%-------- Citacoes ---------
+% - Utilize o comando \citeonline{...} para citacoes com o seguinte formato: Autor et al. (2011).
+% Este tipo de formato eh utilizado no comeco do paragrafo. P.ex.: \citeonline{autor2011}
+
+% - Utilize o comando \cite{...} para citacoeses no meio ou final do paragrafo. P.ex.: \cite{autor2011}
+
+
+
+%-------- Titulos com nomes cientificos (titulo, capitulos e secoes) ----------
+% Regra para escrita de nomes cientificos:
+% Os nomes devem ser escritos em italico,
+%a primeira letra do primeiro nome deve ser em maiusculo e o restante em minusculo (inclusive a primeira letra do segundo nome).
+% VEJA os exemplos abaixo.
+%
+% 1) voce nao quer que a secao fique com uppercase (caixa alta) automaticamente:
+%\section[nouppercase]{\MakeUppercase{Estudo dos efeitos da radiacao ultravioleta C e TFD em celulas de} {\textit{Saccharomyces boulardii}}
+%
+% 2) por padrao os cases (maiusculas/minuscula) sao ajustados automaticamente, voce nao precisa usar makeuppercase e afins.
+% \section{Introducao} % a introducao sera posta no texto como INTRODUCAO, automaticamente, como a norma indica.
+
+
+\end{document}
