@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="antena_uca.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.2623761"
+     inkscape:cx="314.48632"
+     inkscape:cy="669.76872"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g14">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+    <sodipodi:guide
+       position="-3.2604791,297"
+       orientation="0,793.70079"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="210,297"
+       orientation="1122.5197,0"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="210,0"
+       orientation="0,-793.70079"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-1122.5197,0"
+       id="guide4"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-0.091981324 : -63.998146 : 0"
+       inkscape:vp_y="-405.12613 : 0.58226752 : 0"
+       inkscape:vp_z="124.4121 : 235.91575 : 1"
+       inkscape:persp3d-origin="102.42706 : 229.00228 : 1"
+       id="perspective4" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g14">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.502154;stroke-dasharray:none;stroke-opacity:0.98"
+         id="rect25"
+         width="86.351715"
+         height="8.1740694"
+         x="52.188293"
+         y="146.50449" />
+      <path
+         d="m 54.506544,196.65831 0.06652,-46.2816 17.90995,-22.8987 -0.04946,34.41286 z"
+         style="fill:none;fill-rule:evenodd;stroke:#969696;stroke-width:0.682024;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path22" />
+      <path
+         d="m 132.21495,161.97679 0.0495,-34.41286 -59.781398,-0.0859 -0.04946,34.41286 z"
+         style="fill:none;fill-rule:evenodd;stroke:#969696;stroke-width:0.682024;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path20" />
+      <path
+         d="m 134.9061,196.77386 -80.399556,-0.11555 17.927008,-34.76744 59.781398,0.0859 z"
+         style="fill:none;fill-rule:evenodd;stroke:#969696;stroke-width:0.682024;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path21" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#969696;stroke-width:0.411001;stroke-dasharray:none;stroke-opacity:1"
+         d="M 72.387673,161.83086 54.441399,196.62305"
+         id="path25" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-dasharray:none;stroke-opacity:1"
+         d="M 72.440071,161.90946 54.808184,195.99428"
+         id="path26"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-dasharray:none;stroke-opacity:1"
+         d="m 72.56247,127.13072 -0.180914,35.09909"
+         id="path26-6"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-dasharray:none;stroke-opacity:1"
+         d="m 72.50683,161.86492 60.07774,0.0582"
+         id="path26-6-0"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>
