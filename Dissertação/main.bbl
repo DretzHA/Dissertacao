@@ -1,0 +1,271 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Al-Fuqaha et al. 2015]{Fuqaha2015}
+\abntrefinfo{Al-Fuqaha et al.}{AL-FUQAHA et al.}{2015}
+{AL-FUQAHA, A. et al. Internet of things: A survey on enabling technologies,
+  protocols, and applications.
+\emph{{IEEE Communications Surveys \& Tutorials}}, v.~17, n.~4, p. 2347--2376,
+  2015.}
+
+\bibitem[Aledhari et al. 2022]{Aledhari2022}
+\abntrefinfo{Aledhari et al.}{ALEDHARI et al.}{2022}
+{ALEDHARI, M. et al. Biomedical iot: Enabling technologies, architectural
+  elements, challenges, and future directions.
+\emph{IEEE Access}, v.~10, p. 31306--31339, 2022.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9733908$>$.}
+
+\bibitem[Assa e Janabi-Sharifi 2015]{Assa2015}
+\abntrefinfo{Assa e Janabi-Sharifi}{ASSA; JANABI-SHARIFI}{2015}
+{ASSA, A.; JANABI-SHARIFI, F. A kalman filter-based framework for enhanced
+  sensor fusion.
+\emph{IEEE Sensors Journal}, v.~15, n.~6, p. 3281--3292, 2015.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/7001546$>$.}
+
+\bibitem[Assayag et al. 2023]{Assayag2023}
+\abntrefinfo{Assayag et al.}{ASSAYAG et al.}{2023}
+{ASSAYAG, Y. et al. Adaptive path loss model for ble indoor positioning system.
+\emph{IEEE Internet of Things Journal}, v.~10, n.~14, p. 12898--12907, 2023.}
+
+\bibitem[{Bluetooth Special Interest Group (SIG)} 2019]{bluetooth51Core}
+\abntrefinfo{{Bluetooth Special Interest Group (SIG)}}{{Bluetooth Special
+  Interest Group (SIG)}}{2019}
+{{Bluetooth Special Interest Group (SIG)}. \emph{{Bluetooth Core Specification
+  Version 5.1}}.
+Kirkland, WA, USA, 2019. v.~0, n. Bluetooth 5.1. Dispon{\'\i}vel em:
+  $<$https://www.bluetooth.com/specifications/specs/core-specification-5-1/$>$.}
+
+\bibitem[Casareo e Chaczko 2018]{Casareo2018}
+\abntrefinfo{Casareo e Chaczko}{CASAREO; CHACZKO}{2018}
+{CASAREO, K.; CHACZKO, Z. Beacon-based localization middleware for tracking in
+  medical and healthcare environments. In:  \emph{2018 12th International
+  Symposium on Medical Information and Communication Technology (ISMICT)}.
+  [s.n.], 2018. p.~1--6. Dispon{\'\i}vel em:
+  $<$https://ieeexplore.ieee.org/document/8573701$>$.}
+
+\bibitem[Dian, Vahidnia e Rahmati 2020]{Dian2020}
+\abntrefinfo{Dian, Vahidnia e Rahmati}{DIAN; VAHIDNIA; RAHMATI}{2020}
+{DIAN, F. J.; VAHIDNIA, R.; RAHMATI, A. Wearables and the internet of things
+  (iot), applications, opportunities, and challenges: A survey.
+\emph{IEEE Access}, v.~8, p. 69200--69211, 2020.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9058658$>$.}
+
+\bibitem[Engström 2020]{Engström2020}
+\abntrefinfo{Engström}{ENGSTRöM}{2020}
+{ENGSTRöM, J. Improving indoor positioning with adaptive noise modeling.
+\emph{IEEE Access}, v.~8, p. 227213--227221, 2020.}
+
+\bibitem[Farahsari et al. 2022]{Farahsari2022}
+\abntrefinfo{Farahsari et al.}{FARAHSARI et al.}{2022}
+{FARAHSARI, P.~S. et al. A survey on indoor positioning systems for iot-based
+  applications.
+\emph{IEEE Internet of Things Journal}, Institute of Electrical and Electronics
+  Engineers Inc., v.~9, p. 7680--7699, 5 2022.
+ISSN 23274662.}
+
+\bibitem[Feng et al. 2020]{Feng2020}
+\abntrefinfo{Feng et al.}{FENG et al.}{2020}
+{FENG, D. et al. Kalman-filter-based integration of imu and uwb for
+  high-accuracy indoor positioning and navigation.
+\emph{IEEE Internet of Things Journal}, v.~7, n.~4, p. 3133--3146, 2020.}
+
+\bibitem[Goldsmith 2005]{Goldsmith2005}
+\abntrefinfo{Goldsmith}{GOLDSMITH}{2005}
+{GOLDSMITH, A. \emph{{Wireless Communications}}. 1st. ed. [S.l.]: Cambridge
+  University Press, 2005.}
+
+\bibitem[Gouzouasis et al. 2023]{Gouzouasis2012}
+\abntrefinfo{Gouzouasis et al.}{GOUZOUASIS et al.}{2023}
+{GOUZOUASIS, I. et al. A novel antenna system for direction finding
+  applications using ble 5.1 technology. In:  \emph{2023 17th European
+  Conference on Antennas and Propagation (EuCAP)}. [s.n.], 2023. p.~1--5.
+  Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/10132951$>$.}
+
+\bibitem[Guo et al. 2023]{Guo2023}
+\abntrefinfo{Guo et al.}{GUO et al.}{2023}
+{GUO, G. et al. Multichannel and multi-rss based ble range estimation for
+  indoor tracking of commercial smartphones.
+\emph{IEEE Sensors Journal}, v.~23, n.~24, p. 30728--30738, 2023.}
+
+\bibitem[Guo et al. 2020]{Guo2020}
+\abntrefinfo{Guo et al.}{GUO et al.}{2020}
+{GUO, X. et al. A survey on fusion-based indoor positioning.
+\emph{IEEE Communications Surveys \& Tutorials}, v.~22, n.~1, p. 566--594,
+  2020.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/8889728$>$.}
+
+\bibitem[Hayward et al. 2022]{Hayward2022}
+\abntrefinfo{Hayward et al.}{HAYWARD et al.}{2022}
+{HAYWARD, S. et al. A survey of indoor location technologies, techniques and
+  applications in industry.
+\emph{Internet of Things}, v.~20, p. 100608, 2022.
+ISSN 2542-6605.
+Dispon{\'\i}vel em:
+  $<$https://www.sciencedirect.com/science/article/pii/S2542660522000907$>$.}
+
+\bibitem[Hou e Bergmann 2021]{Hou2021}
+\abntrefinfo{Hou e Bergmann}{HOU; BERGMANN}{2021}
+{HOU, X.; BERGMANN, J. Pedestrian dead reckoning with wearable sensors: A
+  systematic review.
+\emph{IEEE Sensors Journal}, v.~21, n.~1, p. 143--152, 2021.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9162069$>$.}
+
+\bibitem[Islam et al. 2023]{Islam2023}
+\abntrefinfo{Islam et al.}{ISLAM et al.}{2023}
+{ISLAM, M.~M. et al. Internet of things: Device capabilities, architectures,
+  protocols, and smart applications in healthcare domain.
+\emph{IEEE Internet of Things Journal}, v.~10, n.~4, p. 3611--3641, 2023.}
+
+\bibitem[Kalman 1960]{Kalman1960}
+\abntrefinfo{Kalman}{KALMAN}{1960}
+{KALMAN, R.~E. A new approach to linear filtering and prediction problems.
+\emph{Transactions of the ASME--Journal of Basic Engineering}, v.~82, n. Series
+  D, p. 35--45, 1960.}
+
+\bibitem[Koren e Prasad 2022]{Koren2022}
+\abntrefinfo{Koren e Prasad}{KOREN; PRASAD}{2022}
+{KOREN, A.; PRASAD, R. Iot health data in electronic health records (ehr):
+  Security and privacy issues in era of 6g.
+\emph{Journal of ICT Standardization}, v.~10, n.~1, p. 63--84, 2022.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/10255403$>$.}
+
+\bibitem[Li, Cheng e Chen 2020]{Chun2020}
+\abntrefinfo{Li, Cheng e Chen}{LI; CHENG; CHEN}{2020}
+{LI, C.~T.; CHENG, J.~C.; CHEN, K. Top 10 technologies for indoor positioning
+  on construction sites.
+\emph{Automation in Construction}, v.~118, p. 103309, 2020.
+ISSN 0926-5805.
+Dispon{\'\i}vel em:
+  $<$https://www.sciencedirect.com/science/article/pii/S0926580519306016$>$.}
+
+\bibitem[Li et al. 2021]{Li2021}
+\abntrefinfo{Li et al.}{LI et al.}{2021}
+{LI, Y. et al. Toward location-enabled iot (le-iot): Iot positioning
+  techniques, error sources, and error mitigation.
+\emph{IEEE Internet of Things Journal}, v.~8, n.~6, p. 4035--4062, 2021.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9184896$>$.}
+
+\bibitem[Liu et al. 2024]{Liu2024}
+\abntrefinfo{Liu et al.}{LIU et al.}{2024}
+{LIU, J. et al. Dynamic feasible region-based imu/uwb fusion method for indoor
+  positioning.
+\emph{IEEE Sensors Journal}, v.~24, n.~13, p. 21447--21457, 2024.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/10531196$>$.}
+
+\bibitem[Liu et al. 2022]{Liu2022}
+\abntrefinfo{Liu et al.}{LIU et al.}{2022}
+{LIU, Q. et al. Environment perception based seamless indoor and outdoor
+  positioning system of smartphone.
+\emph{IEEE Sensors Journal}, v.~22, n.~17, p. 17205--17215, 2022.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9843887$>$.}
+
+\bibitem[López-Pastor et al. 2019]{Lopez2019}
+\abntrefinfo{López-Pastor et al.}{LóPEZ-PASTOR et al.}{2019}
+{LóPEZ-PASTOR, J.~A. et al. Evaluation of an indoor positioning system for
+  added-value services in a mall. In:  \emph{2019 International Conference on
+  Indoor Positioning and Indoor Navigation (IPIN)}. [s.n.], 2019. p.~1--8.
+  Dispon{\'\i}vel em:
+  $<$https://ieeexplore.ieee.org/abstract/document/8911822$>$.}
+
+\bibitem[Mackey et al. 2020]{Mackey2020}
+\abntrefinfo{Mackey et al.}{MACKEY et al.}{2020}
+{MACKEY, A. et al. Improving ble beacon proximity estimation accuracy through
+  bayesian filtering.
+\emph{IEEE Internet of Things Journal}, v.~7, n.~4, p. 3160--3169, 2020.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/8956048$>$.}
+
+\bibitem[Nessa et al. 2020]{Nessa2020}
+\abntrefinfo{Nessa et al.}{NESSA et al.}{2020}
+{NESSA, A. et al. A survey of machine learning for indoor positioning.
+\emph{IEEE Access}, v.~8, p. 214945--214965, 2020.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9264122$>$.}
+
+\bibitem[Pau et al. 2021]{pau_bluetooth_2021}
+\abntrefinfo{Pau et al.}{PAU et al.}{2021}
+{PAU, G. et al. Bluetooth 5.1: {An} {Analysis} of {Direction} {Finding}
+  {Capability} for {High}-{Precision} {Location} {Services}.
+\emph{Sensors}, v.~21, n.~11, p.~3589, jan. 2021.
+ISSN 1424-8220.
+Dispon{\'\i}vel em: $<$https://www.mdpi.com/1424-8220/21/11/3589$>$.}
+
+\bibitem[Philips et al. 2023]{Philips2023}
+\abntrefinfo{Philips et al.}{PHILIPS et al.}{2023}
+{PHILIPS, D.~R. et al. {Location Accuracy Optimization in Bluetooth Low Energy
+  (BLE) 5.1-Based Indoor Positioning System (IPS)—A Machine Learning
+  Approach}.
+\emph{IEEE Access}, v.~11, p. 140186--140201, 2023.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/10336808$>$.}
+
+\bibitem[Rahmani et al. 2022]{Rahmani2022}
+\abntrefinfo{Rahmani et al.}{RAHMANI et al.}{2022}
+{RAHMANI, A.~M. et al. The internet of things for applications in wearable
+  technology.
+\emph{IEEE Access}, v.~10, p. 123579--123594, 2022.}
+
+\bibitem[Sadowski e Spachos 2018]{Sadowski2018}
+\abntrefinfo{Sadowski e Spachos}{SADOWSKI; SPACHOS}{2018}
+{SADOWSKI, S.; SPACHOS, P. Rssi-based indoor localization with the internet of
+  things.
+\emph{IEEE Access}, v.~6, p. 30149--30161, 2018.}
+
+\bibitem[Tan et al. 2021]{Tan2021}
+\abntrefinfo{Tan et al.}{TAN et al.}{2021}
+{TAN, Z. et al. Protecting privacy of location-based services in road networks.
+\emph{IEEE Transactions on Intelligent Transportation Systems}, v.~22, n.~10,
+  p. 6435--6448, 2021.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9133462$>$.}
+
+\bibitem[Tao et al. 2021]{Tao2021}
+\abntrefinfo{Tao et al.}{TAO et al.}{2021}
+{TAO, B. et al. An rfid-based mobile robot localization method combining phase
+  difference and readability.
+\emph{IEEE Transactions on Automation Science and Engineering}, v.~18, n.~3, p.
+  1406--1416, 2021.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9143401$>$.}
+
+\bibitem[Ullah et al. 2020]{Ullah2020}
+\abntrefinfo{Ullah et al.}{ULLAH et al.}{2020}
+{ULLAH, I. et al. A localization based on unscented kalman filter and particle
+  filter localization algorithms.
+\emph{IEEE Access}, v.~8, p. 2233--2246, 2020.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/8939454$>$.}
+
+\bibitem[Vailshery 2023]{Vailshery2023}
+\abntrefinfo{Vailshery}{VAILSHERY}{2023}
+{VAILSHERY, L.~S. \emph{Number of IoT connected devices worldwide 2019-2023,
+  with forecasts to 2030}. 2023.
+\url{https://www.statista.com/statistics/1183457/iot-connected-devices-worldwide}.
+  Acesso em: 28 de Abril de 2024.}
+
+\bibitem[Vena et al. 2021]{Vena2021}
+\abntrefinfo{Vena et al.}{VENA et al.}{2021}
+{VENA, A. et al. Rfid based indoor localization system to analyze visitor
+  behavior in a museum. In:  \emph{2021 IEEE International Conference on RFID
+  Technology and Applications (RFID-TA)}. [s.n.], 2021. p. 183--186.
+  Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9617265$>$.}
+
+\bibitem[Yao et al. 2020]{Yao2020}
+\abntrefinfo{Yao et al.}{YAO et al.}{2020}
+{YAO, H. et al. Integrity monitoring for bluetooth low energy beacons rssi
+  based indoor positioning.
+\emph{IEEE Access}, v.~8, p. 215173--215191, 2020.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9262876$>$.}
+
+\bibitem[Yu et al. 2021]{Yu2021}
+\abntrefinfo{Yu et al.}{YU et al.}{2021}
+{YU, Y. et al. A novel 3-d indoor localization algorithm based on ble and
+  multiple sensors.
+\emph{IEEE Internet of Things Journal}, v.~8, n.~11, p. 9359--9372, 2021.}
+
+\bibitem[Zhuang et al. 2022]{Zhuang2022}
+\abntrefinfo{Zhuang et al.}{ZHUANG et al.}{2022}
+{ZHUANG, Y. et al. Bluetooth localization technology: Principles, applications,
+  and future trends.
+\emph{IEEE Internet of Things Journal}, v.~9, n.~23, p. 23506--23524, 2022.
+Dispon{\'\i}vel em: $<$https://ieeexplore.ieee.org/document/9878154$>$.}
+
+\end{thebibliography}

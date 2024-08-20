@@ -1,0 +1,26 @@
+\contentsline {sigla}{\hbox to\@tempdima {IoT\hfil }{Internet das coisas, do inglês \textit {Internet of Things}}}{10}{chapter.listoftables.1}%
+\contentsline {sigla}{\hbox to\@tempdima {GPS\hfil }{Sistema de Posicionamento Global, do inglês \textit {Global Positioning System}}}{11}{figure.caption.10}%
+\contentsline {sigla}{\hbox to\@tempdima {GNSS\hfil }{Sistema Global de Navegação por Satélite, do inglês \textit {Global Navigation Satellite System}}}{11}{figure.caption.10}%
+\contentsline {sigla}{\hbox to\@tempdima {IPS\hfil }{Sistemas de Posicionamento Interno, do inglês \textit {Indoor Positioning System}}}{12}{figure.caption.10}%
+\contentsline {sigla}{\hbox to\@tempdima {RFID\hfil }{Identificação por Radio frequência, do inglês \textit {Radio Frequency Identification}}}{12}{figure.caption.10}%
+\contentsline {sigla}{\hbox to\@tempdima {UWB\hfil }{Banda Ultra Larga, do inglês \textit {Ultra Wide Band}}}{12}{figure.caption.10}%
+\contentsline {sigla}{\hbox to\@tempdima {AP\hfil }{Postos de Acesso, do inglês \textit {Access Point}}}{12}{table.caption.11}%
+\contentsline {sigla}{\hbox to\@tempdima {MLT\hfil }{Multilateção}}{13}{table.caption.11}%
+\contentsline {sigla}{\hbox to\@tempdima {AoA\hfil }{Ângulo de Chegada, do inglês \textit {Angle of Arrival}}}{13}{table.caption.11}%
+\contentsline {sigla}{\hbox to\@tempdima {FP\hfil }{Impressão Digital, do inglês \textit {Fingerprint}}}{13}{table.caption.11}%
+\contentsline {sigla}{\hbox to\@tempdima {RSSI\hfil }{Indicador de Intensidade do Sinal Recebido, do inglês \textit {Received Signal Strength Indication}}}{13}{table.caption.11}%
+\contentsline {sigla}{\hbox to\@tempdima {ToF\hfil }{Tempo de Voo, do inglês \textit {Time of Flight}}}{13}{Item.1}%
+\contentsline {sigla}{\hbox to\@tempdima {TDoF\hfil }{Diferença no Tempo de Chegada, do inglês \textit {Time Difference of Arrival}}}{13}{Item.1}%
+\contentsline {sigla}{\hbox to\@tempdima {RTT\hfil }{Tempo de Ida e Volta, do inglês \textit {Round-trip-time}}}{13}{Item.1}%
+\contentsline {sigla}{\hbox to\@tempdima {CSI\hfil }{Informações do Estado do Canal, do inglês \textit {Channel State Information}}}{13}{Item.2}%
+\contentsline {sigla}{\hbox to\@tempdima {PSRP\hfil }{Potência Recebida do Sinal de Referência, do inglês \textit {Reference Signal-Received Power}}}{13}{Item.2}%
+\contentsline {sigla}{\hbox to\@tempdima {PSRQ\hfil }{Qualidade Recebida do Sinal de Referência, do inglês \textit {Reference Signal-Received Quality}}}{13}{Item.2}%
+\contentsline {sigla}{\hbox to\@tempdima {AoD\hfil }{Ângulo de Partida, do inglês \textit {Angle of Departure}}}{13}{Item.3}%
+\contentsline {sigla}{\hbox to\@tempdima {BLE\hfil }{\textit {Bluetooth Low Energy}}}{14}{Item.3}%
+\contentsline {sigla}{\hbox to\@tempdima {DF\hfil }{Determinação de Direção, do inglês \textit {Direction Finding}}}{14}{Item.3}%
+\contentsline {sigla}{\hbox to\@tempdima {NLoS\hfil }{não linha de visada, do inglês Non Line of Sight}}{15}{section.listoftables.1.1}%
+\contentsline {sigla}{\hbox to\@tempdima {FK\hfil }{Filtro de Kalman}}{15}{section.listoftables.1.1}%
+\contentsline {sigla}{\hbox to\@tempdima {FKU\hfil }{Filtro de Kalman \textit {Unscented}}}{15}{section.listoftables.1.1}%
+\contentsline {sigla}{\hbox to\@tempdima {FdP\hfil }{Filtro de Partículas}}{15}{section.listoftables.1.1}%
+\contentsline {sigla}{\hbox to\@tempdima {RMSE\hfil }{do inglês, \textit {Root Mean Squared Error}}}{17}{section.listoftables.1.3}%
+\contentsline {sigla}{\hbox to\@tempdima {LoS\hfil }{do inglês \textit {Line of Sight}}}{18}{section.listoftables.1.5}%
