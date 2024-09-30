@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showguides="true"
      showgrid="true"
-     inkscape:zoom="0.86412738"
-     inkscape:cx="259.22104"
-     inkscape:cy="425.28452"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="1358"
+     inkscape:zoom="2.4441213"
+     inkscape:cx="91.648478"
+     inkscape:cy="465.40243"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
@@ -477,12 +477,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.396928"
+       style="fill:none;stroke:#000000;stroke-width:0.415756"
        id="rect1"
-       width="30.580929"
-       height="14.965464"
-       x="99.873581"
-       y="14.868814" />
+       width="33.593182"
+       height="14.946635"
+       x="98.367455"
+       y="14.878228" />
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:tb-rl;text-orientation:upright;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
@@ -515,13 +515,13 @@
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:tb-rl;text-orientation:upright;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
-       x="188.24529"
+       x="186.65781"
        y="41.193413"
        id="text1-9"><tspan
          sodipodi:role="line"
          id="tspan1-4"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
-         x="188.24529"
+         x="186.65781"
          y="41.6492">c</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.396928"
@@ -806,22 +806,22 @@
          x="25.966803"
          y="158.76138">v</tspan></text>
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.396928"
+       style="fill:none;stroke:#000000;stroke-width:0.417067"
        id="rect1-9-1-56-2-8-1"
-       width="30.580929"
-       height="14.965464"
-       x="10.804103"
-       y="114.29374" />
+       width="33.808376"
+       height="14.945324"
+       x="10.814173"
+       y="114.30381" />
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:tb-rl;text-orientation:upright;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
-       x="26.331583"
+       x="27.389917"
        y="120.59341"
        id="text1-9-2-3-1-03-8"><tspan
          sodipodi:role="line"
          id="tspan1-4-5-9-6-79-0"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
-         x="26.331583"
+         x="27.389917"
          y="121.04919">r</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.396928"
@@ -1042,7 +1042,7 @@
          y="67.372536">m</tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
-       d="M 99.86334,22.083601 H 79.9448 v 11.772176"
+       d="m 98.332412,22.083601 -18.387612,0 v 11.772176"
        id="path1"
        sodipodi:nodetypes="ccc" />
     <path
@@ -1072,7 +1072,7 @@
        sodipodi:nodetypes="ccc" />
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle-7)"
-       d="m 130.35634,21.58125 h 57.92246 l 0.10825,12.432107"
+       d="m 131.84899,21.58125 56.42981,0 0.10825,12.432107"
        id="path1-6"
        sodipodi:nodetypes="ccc" />
     <circle
